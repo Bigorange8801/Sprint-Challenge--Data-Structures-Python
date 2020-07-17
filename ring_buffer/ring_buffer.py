@@ -3,6 +3,7 @@ class RingBuffer:
         self.capacity = capacity
         self.buffer = []
         self.overwrite = []
+    
     def append(self, item):
         if (len(self.buffer) < self.capacity):
             self.buffer.append(item)
